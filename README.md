@@ -12,6 +12,7 @@ Bug 1 → Even after fixing bugs 2–5, the bot still refuses every response —
 The bugs are ordered by discovery difficulty, forcing students to debug in layers: crash → training failure → inference failure.
 
 SOLUTIONS OF BUGS:
+
 Bug 1 | _one_hot()        : vec[idx] was set to 0.0 → fixed to 1.0
 
 Bug 2 | preprocess()      : tok.isdigit() → tok.isalpha() (kept digits, dropped letters)
